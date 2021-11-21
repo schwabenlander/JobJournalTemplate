@@ -1,0 +1,52 @@
+html,
+body {
+	overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+	padding-top: 56px;
+}
+
+@media (max-width: 991.98px) {
+	.offcanvas-collapse {
+		position: fixed;
+		top: 56px; /* Height of navbar */
+		bottom: 0;
+		left: 100%;
+		width: 100%;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		overflow-y: auto;
+		visibility: hidden;
+		background: linear-gradient(270deg, #4b6cb7 0%, #182848 100%);
+		transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	}
+	.offcanvas-collapse.open {
+		visibility: visible;
+		transform: translateX(-100%);
+	}
+}
+
+.bg-blue {
+	background: linear-gradient(270deg, #4b6cb7 0%, #182848 100%);
+}
+
+.btn-outline-white {
+	color: #fff;
+	border-color: #fff;
+}
+
+.btn-outline-white:hover {
+	color: #4b6cb7;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+.copyright {
+	font-size: small;
+	text-transform: uppercase;
+}
+
+.text-bold {
+	font-weight: bold;
+}
